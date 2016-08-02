@@ -1,10 +1,9 @@
 class SearchController < ApplicationController
 
   def show
-    @item = Item.find(params[:id])
+    @store = Store.retrieve(params[:search])
   end
 
   def index
-
   end
 end
