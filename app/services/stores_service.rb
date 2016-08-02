@@ -6,6 +6,11 @@ class StoresService
 
   def get_nearby_stores(zipcode)
     response = @connection.get("/v1/stores(area(#{zipcode},25))?format=json&show=storeId,storeType,name&pageSize=2&apiKey=#{api_key}")
+    parse(response)
+  end
+
+  def parse(response)
+    JSON.parse(response.body)
   end
 
   private

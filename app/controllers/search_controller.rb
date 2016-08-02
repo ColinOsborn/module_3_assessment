@@ -1,10 +1,9 @@
 class SearchController < ApplicationController
 
   def show
-    @store = Store.retrieve(params[:search])
-    byebug
   end
 
   def index
+    @stores = Store.retrieve(params[:seach])
   end
 end
