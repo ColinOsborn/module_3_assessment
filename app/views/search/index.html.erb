@@ -1,1 +1,9 @@
-<%= @stores.eac %>
+
+<% @stores.each do |store| %>
+<%= "#{store.count} Total Stores" %>
+    <h4>Name: <%= store.name %></h4>
+    <h4>City: <%= store.city %></h4>
+    <h4>Distance: <%= store.distance %></h4>
+    <h4>Phone Number: <%= store.phone_number %></h4>
+    <h4>Store Type: <%= store.type %></h4>
+<% end %>

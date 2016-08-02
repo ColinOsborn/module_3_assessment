@@ -8,8 +8,8 @@ class Store < OpenStruct
     @@service ||= StoreService.new
   end
 
-  def self.retrieve(id)
-    stores_hash = service.get_nearby_stores(id)
+  def self.retrieve(zipcode)
+    stores_hash = service.get_nearby_stores(zipcode)
     Store.new(stores_hash)
   end
 
