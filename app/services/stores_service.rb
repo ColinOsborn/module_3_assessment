@@ -16,7 +16,8 @@ class StoresService
   private
 
   def api_key
-    Rails.application.secrets[:best_buy_api_key]
+    # Rails.application.secrets[:best_buy_api_key]
+    "uf3hrj9pa5u2jxvqa3xfq5a5"
   end
 
 end

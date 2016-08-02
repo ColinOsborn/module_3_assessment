@@ -4,6 +4,6 @@ class SearchController < ApplicationController
   end
 
   def index
-    @stores = Store.retrieve(params[:seach])
+    @stores = Store.retrieve(params[:zip])
   end
 end

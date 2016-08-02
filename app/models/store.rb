@@ -11,7 +11,6 @@ class Store < OpenStruct
 
   def self.retrieve(zipcode)
     stores_hash = service.get_nearby_stores(zipcode)
-    byebug
     Store.new(stores_hash)
   end
 
