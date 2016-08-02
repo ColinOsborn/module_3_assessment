@@ -15,6 +15,9 @@ gem "minitest-rails"
 gem "rspec-rails"
 gem "capybara"
 gem "shoulda-matchers"
+gem "faraday"
+gem "byebug"
+gem "vcr"
 
 
 group :development do
