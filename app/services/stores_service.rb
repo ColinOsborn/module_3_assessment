@@ -10,14 +10,14 @@ class StoresService
   end
 
   def parse(response)
+    byebug
     JSON.parse(response.body)
   end
 
   private
 
   def api_key
-    # Rails.application.secrets[:best_buy_api_key]
-    "uf3hrj9pa5u2jxvqa3xfq5a5"
+    Rails.application.secrets[:best_buy_api_key]
   end
 
 end

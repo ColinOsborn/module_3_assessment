@@ -5,5 +5,6 @@ class SearchController < ApplicationController
 
   def index
     @stores = Store.retrieve(params[:zip])
+    byebug
   end
 end
